@@ -1,0 +1,44 @@
+<form>
+  <div class="card">
+    <div class="card-header text-uppercase"><span>User details</span> <span class="close" (click)="closeForm()">X</span></div>
+    <div class="card-body">
+      <h4 class="card-title">{{ user.name | uppercase }}</h4>
+
+      <div class="form-group row text-left">
+        <label class="col-sm-3 col-form-label">Name:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="user.name" name="name">
+        </div>
+      </div>
+
+      <div class="form-group row text-left">
+        <label class="col-sm-3 col-form-label">Gender:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="user.gender" name="gender">
+        </div>
+      </div>
+
+      <div class="form-group row text-left">
+        <label class="col-sm-3 col-form-label">Bio:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="user.bio" name="bio">
+        </div>
+      </div>
+
+      <div class="form-group row text-left">
+        <label class="col-sm-3 col-form-label">Proffesion:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="user.proffesion" name="profession">
+        </div>
+      </div>
+
+      <div class="form-group row text-left">
+        <label class="col-sm-3 col-form-label">Image:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="user.image" name="image">
+        </div>
+      </div>
+      <button class="btn submit-user" (click)="addUser()">Submit</button>
+    </div>
+  </div>
+</form>

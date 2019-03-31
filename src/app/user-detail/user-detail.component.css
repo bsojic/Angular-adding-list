@@ -1,0 +1,19 @@
+.card {
+  margin-top: 50px;
+}
+p {
+  position: relative;
+  top: 8px;
+}
+a {
+  position: relative;
+  top: 8px;
+}
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+img {
+  height: 200px;
+  width: 140px;
+}

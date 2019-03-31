@@ -1,0 +1,36 @@
+<div class="card" *ngIf="user">
+  <div class="card-header text-uppercase"><span>User details</span> <span class="close" (click)="closeForm()">X</span></div>
+  <div class="card-body">
+    <h4 class="card-title">{{ user.name | uppercase }}</h4>
+    <div class="form-group row text-left">
+      <label for="userName" class="col-sm-4 col-form-label">Name:</label>
+      <div class="col-sm-8">
+        <p>{{user.name}}</p>
+      </div>
+    </div>
+    <div class="form-group row text-left">
+      <label for="userGender" class="col-sm-4 col-form-label">Gender:</label>
+      <div class="col-sm-8">
+        <p>{{user.gender}}</p>
+      </div>
+    </div>
+    <div class="form-group row text-left">
+      <label for="userBio" class="col-sm-4 col-form-label">Bio:</label>
+      <div class="col-sm-8">
+        <p>{{user.bio}}</p>
+      </div>
+    </div>
+    <div class="form-group row text-left">
+      <label for="userProfession" class="col-sm-4 col-form-label">Profession:</label>
+      <div class="col-sm-8">
+        <p>{{user.proffesion}}</p>
+      </div>
+    </div>
+    <div class="form-group row text-left">
+      <label for="userImage" class="col-sm-4 col-form-label">Image:</label>
+      <div class="col-sm-8">
+        <img [src]="user.image">
+      </div>
+    </div>
+  </div>
+</div>
